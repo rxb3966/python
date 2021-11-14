@@ -1,0 +1,10 @@
+def curzonnum(num):
+    numthis=2*num+1
+    numthat=2**num+1
+    if numthat%numthis==0:
+        print("True")
+    elif numthat%numthis!=0:
+        print("False")
+          
+num=int(input("Enter a number to see if it is a curzon number. Number: "))
+curzonnum(num)
