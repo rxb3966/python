@@ -1,0 +1,11 @@
+def relation_to_luke(name):
+    Lukedict={
+    "Darth Vader": "father",
+    "Leia": "sister",
+    "Han": "brother in law",
+    "R2D2": "droid"
+}
+
+    print("I am your", Lukedict[name]+".")
+name=input("Enter name (Darth Vader, Leia, Han, or R2D2. Name: ")
+relation_to_luke(name)
