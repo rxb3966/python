@@ -1,0 +1,22 @@
+# functions Section
+
+def series_resistance(list):
+    total = 0
+    for j in range(0, len(list)):
+        total += list[j]
+        print ("total", total)
+    if total<=1:
+        print("The total resistance is",str(total)+"ohms.")
+    else:
+        print("The total resistance is",str(total)+"ohms.")
+
+# Main Program Section 
+
+print("How many resistors are there? ")
+resnum=int(input())
+reslist=[]
+for i in range(resnum):
+    x= float(input("What is the value of the resistor? Value:"))
+    reslist.append(x)
+print(reslist)
+series_resistance(reslist)
