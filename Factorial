@@ -1,0 +1,11 @@
+# Functions
+def factorial(integer):
+    fac = 1
+    for num in range(1, integer + 1):
+        fac = fac * num
+    print("The factorial of",integer,"is",fac)
+    
+    
+# main
+integer = int(input("Enter a number to get the factorial of the number. Number: "))
+factorial(integer)
