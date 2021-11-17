@@ -1,0 +1,11 @@
+# Functions
+def feelmood(mood):
+    if mood == '':
+        print("Today, I am feeling neutral")
+    else:
+        print("Today, I am feeling",mood,)
+        
+        
+# main
+mood = input("Enter your mood. Mood: ")
+feelmood(mood)
