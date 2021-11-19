@@ -1,0 +1,7 @@
+num=int(input("Enter a number to find the factorial of that number. Number: "))
+x=1
+b=1
+while x!=num+1:
+    b=b*x
+    x=x+1
+print(b)
