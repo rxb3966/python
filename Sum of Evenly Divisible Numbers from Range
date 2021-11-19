@@ -1,0 +1,17 @@
+#function
+
+def evenlydivisible():
+    numsum = 0
+    for i in range(a, b+1):
+        if i%c == 0:
+            numsum = numsum + i
+    print(numsum)
+
+#main
+print("Enter 3 numbers.")
+a = int(input())
+b = int(input())
+c = int(input())
+
+# call function 
+evenlydivisible()
