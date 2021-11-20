@@ -1,0 +1,13 @@
+#Christmas_eve
+
+#function
+def is_it_christmas_eve(date):
+    listdate = date.split(", ")
+    listdate = listdate[1] + ", " + listdate[2]
+    if listdate == "December, 24th":
+        print("True")
+    else:
+        print("False")
+#main
+date = input("Enter the date (please enter in format year, month name, day of the month). ")
+is_it_christmas_eve(date) 
