@@ -1,0 +1,17 @@
+#Dictionary to List
+
+#function
+def dicttolist(year, month, day):
+    dic = {
+    "year": year,
+    "month": month,
+    "day": day
+}
+    print("(year,",year+")", "(month,",month+")", "(day,",day+")")
+
+#main
+print("Enter the year, the month, and the day.")
+year = input()
+month = input()
+day = input()
+dicttolist(year, month, day) 
