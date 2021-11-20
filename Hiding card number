@@ -1,0 +1,14 @@
+#Hiding the Card Number
+
+#function
+def hiddencardnum(cardnum):
+    last4cardnum = cardnum[-4:]
+    cardnum=cardnum[:-4]
+    notlast4cardnum = " "
+    for i in str(cardnum):
+        notlast4cardnum = notlast4cardnum + "*"
+    print(notlast4cardnum+str(last4cardnum))
+    
+#main
+cardnum = input("Enter your card number. ")
+hiddencardnum(cardnum) 
