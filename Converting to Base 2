@@ -1,0 +1,12 @@
+#Convert a Number into base 2
+
+#function
+def binary(num):
+    binnum = bin(num)
+    strbinnum = str(binnum)
+    strbinnum = strbinnum[2:]
+    print(strbinnum)
+    
+#main
+num = int(input("Enter a number. Number: "))
+binary(num)
