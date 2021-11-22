@@ -1,0 +1,26 @@
+#Basic Arithmetic Operations on a String Number
+
+#function
+def arithmetic_on_a_string(opnum):
+    opnumsplit = opnum.split(' ')
+    opnumsplit1 = opnumsplit[0]
+    opnumsplit2 = opnumsplit[1]
+    opnumsplit3 = opnumsplit[-1]
+    opnumsplit1int = int(opnumsplit1)
+    opnumsplit3int = int(opnumsplit3)
+    if opnumsplit2 == "+":
+        z = opnumsplit1int+opnumsplit3int
+        print(z)
+    elif opnumsplit2 == "-":
+        z = opnumsplit1int-opnumsplit3int
+        print(z)   
+    elif opnumsplit2 == "*":
+        z = opnumsplit1int*opnumsplit3int
+        print(z)
+    elif opnumsplit2 == "/":
+        z = opnumsplit1int/opnumsplit3int
+        print(z)
+        
+#main
+opnum = input("Enter arithmetic operation and numbers (in number1 operation number2 format). ")
+arithmetic_on_a_string(opnum)
