@@ -1,0 +1,11 @@
+#Right Shift by Division
+
+#function
+def right_shift(num1, num2):
+    right_shift = num1/(2**num2)
+    print(right_shift)
+#main
+print("Enter 2 numbers.")
+num1 = int(input())
+num2 = int(input())
+right_shift(num1, num2)
