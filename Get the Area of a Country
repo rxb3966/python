@@ -1,0 +1,12 @@
+#Get the Area of a Country
+
+#function
+def area_of_country(country_name, country_area):
+    percent = round(country_area / 1489400,2)
+    print(country_name , "is" , str(percent) + "% of the total world's landmass.")
+
+#main
+print("Enter the country name and area.")
+country_name = input()
+country_area = int(input())
+area_of_country(country_name, country_area)
