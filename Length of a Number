@@ -1,0 +1,13 @@
+#Length of a Number
+
+#function
+def length_of_num(num):
+    lennum = 0
+    strnum = str(num)
+    for i in strnum:
+        lennum = lennum + 1
+    print(lennum)
+    
+#main
+num = int(input("Enter a number. "))
+length_of_num(num)
