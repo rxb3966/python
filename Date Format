@@ -1,0 +1,14 @@
+#Date Format
+
+#Funtion
+def change_date_format(df):
+    df_split = df.split("/")
+    df_split_1 = df_split[0]
+    df_split_2 = df_split[1]
+    df_split_3 = df_split[2]
+    df_add = df_split_3 + df_split_2 + df_split_1
+    print(df_add)
+    
+#Main
+df = input("Enter a date (in format, MM/DD/YYYY). ")
+change_date_format(df)
