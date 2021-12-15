@@ -1,0 +1,23 @@
+#Sum of Odd and Even Numbers
+
+#Function
+def sum_odd_and_even(num_list):
+    even_sum = 0
+    odd_sum = 0
+    for i in num_list:
+        if i % 2 == 0:
+            even_sum += i
+        else:
+            odd_sum += i
+    print("Even Sum is ", even_sum,"Odd Sum is ", odd_sum)
+
+#Main
+num_list = []
+n = int(input("Enter the list size "))
+print("\n")
+for i in range(0, n):
+    print("Enter number at index", i, )
+    item = int(input())
+    num_list.append(item)
+print("User list is ", num_list)
+sum_odd_and_even(num_list)
