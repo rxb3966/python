@@ -1,0 +1,14 @@
+#The Snake — Area Filling
+
+#Function
+def snakefill(num):
+    n = 1
+    num_of_times = 0
+    while n * 2 <= num * num:
+    	num_of_times += 1
+    	n *= 2		
+    print(num_of_times)
+    
+#Main
+num = int(input("Enter a number. "))
+snakefill(num)
