@@ -1,0 +1,17 @@
+#C*ns*r*d Str*ngs
+
+#Function
+def uncensor(txt, vowels):
+    txt_with_vowels = ""
+    for i in txt:
+        if i != "*":
+            txt_with_vowels += i
+        else:
+            txt_with_vowels += vowels[0]
+            vowels.replace(vowels[0], "")
+    print(txt_with_vowels)
+    
+#Main
+txt = input("Enter a censored string (like this: C*ns*r*d Str*ng). ")
+vowels = input("Enter the vowels that got censored (like this: eoei) ")
+uncensor(txt, vowels)
