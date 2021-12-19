@@ -1,0 +1,24 @@
+#Disarium Number
+
+#Function
+def is_disarium(num):
+    posit = 0
+    prod = 1
+    sum = 0
+    num = str(num)
+    for digit in num:
+        posit += 1
+        digit = int(digit)
+        for i in range(0, posit):
+            prod *= digit
+        sum += prod 
+        prod = 1
+    num = int(num)
+    if sum == num:
+        print("True")
+    else:
+        print("False")
+
+#Main
+num = int(input("Enter a number. "))
+is_disarium(num)
