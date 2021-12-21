@@ -1,0 +1,19 @@
+#The Collatz Sequence
+
+#Functions
+def max_collatz(num):
+    list = []
+    while num != 1:
+        if num % 2 == 0:
+            num /= 2
+            list.append(num)
+        else:
+            num *= 3
+            num += 1
+            list.append(num)
+    list.sort()
+    print(list[-1])
+
+#Main
+num = int(input("Enter a number. "))
+max_collatz(num)
