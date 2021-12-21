@@ -1,0 +1,12 @@
+#Pentagonal Number
+
+#Function
+def pentagonal(num):
+    ans = 1
+    for i in range(1, num):
+	    ans += 5 * i
+    print(ans)
+	
+#Main
+num = int(input("Enter a number. "))
+pentagonal(num)
