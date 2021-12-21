@@ -1,0 +1,26 @@
+#The Karaca's Encryption Algorithm
+
+#Function
+def encrypt(word):
+	word = word[::-1]
+	encryptstr = ""
+	
+	for i in word:
+		if i == "a":
+			encryptstr += "0"
+		elif i == "e":
+			encryptstr += "1"
+		elif i == "i":
+			encryptstr += "2"
+		elif i == "o":
+			encryptstr += "2"
+		elif i == "u":
+			encryptstr += "3"
+		else:
+			encryptstr += i
+	encryptstr += "aca"
+	print(encryptstr)
+
+#Main
+word = input("Enter a word. ")
+encrypt(word)
