@@ -1,0 +1,16 @@
+#Rolling Cipher
+
+#Function
+def rolling_cipher(txt, n):
+    alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    result = ""
+    for char in txt:
+        char_index = alpha.index(char)
+        result += alpha[char_index + n]
+    print(result)
+
+#Main
+txt = input("Enter text. ")
+n = int(input("Enter number. "))
+    
+rolling_cipher(txt, n)
