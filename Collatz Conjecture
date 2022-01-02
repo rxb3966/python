@@ -1,0 +1,23 @@
+#Collatz Conjecture
+
+#Function
+def collatz(x):
+    count = 0
+    while x != 1:
+        if x % 2 == 0:
+            x /= 2
+            count += 1
+        else:
+            x *= 3
+            x += 1
+            count += 1
+    return count
+
+#Main
+a = int(input("Enter a number. "))
+b = int(input("Enter another number. "))
+
+if collatz(a) < collatz(b):
+    print("a")
+else:
+    print("b")
