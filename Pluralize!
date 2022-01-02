@@ -1,0 +1,20 @@
+#Pluralize!
+
+#Function
+def pluralize(lst):
+    lst_set = set()
+    for i in lst:
+        if lst.count(i) > 1:
+            lst_set.add(i + "s")
+        else:
+            lst_set.add(i)
+    print(lst_set)
+
+#Main
+lst = []
+n = int(input("Enter number of elements: "))
+for i in range(0, n):
+    ele = input()
+    lst.append(ele)
+    
+pluralize(lst)
