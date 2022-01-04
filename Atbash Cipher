@@ -1,0 +1,15 @@
+#Atbash Cipher
+
+#Function
+def atbash(txt):
+    result = ""
+    for char in txt:
+        char_index = alpha.index(char)
+        result += alpha[char_index - 2 * char_index - 1]
+    print(result)
+
+#Main
+txt = input("Enter text (must be lowercase). ")
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+atbash(txt)
