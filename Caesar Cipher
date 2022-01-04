@@ -1,0 +1,17 @@
+#Caesar Cipher
+
+#Function
+def caesar_cipher(txt, key):
+    result = ""
+    for char in txt:
+        char_index = alpha.index(char)
+        result += alpha[char_index + key]
+    print(result)
+
+#Main
+txt = input("Enter text. ")
+key = input("Enter number. ")
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+key = alpha.index(key) + 1
+
+caesar_cipher(txt, key)
