@@ -1,0 +1,32 @@
+#Track the Robot (Part 2)
+
+#Function
+def track_robot(lst):
+    x = 0
+    y = 0
+    d = 1
+    for i in lst:
+        if d == 5:
+            d = 1
+        if d == 1:
+            y += i
+        if d == 2:
+            x += i
+        if d == 3:
+            y -= i
+        if d == 4:
+            x -= i
+        d += 1
+        
+    print(x, ",", y)
+
+#Main
+x = 0
+y = 0
+lst = []
+n = int(input("Enter number of elements: "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+    
+track_robot(lst)
