@@ -1,0 +1,11 @@
+#Tower of Hanoi
+
+#Function
+def tower_of_hanoi(discs):
+    result = 2 ** discs - 1 
+    print(result)
+    
+#Main
+discs = int(input("Enter the number of disces. "))
+
+tower_of_hanoi(discs)
