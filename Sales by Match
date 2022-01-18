@@ -1,0 +1,18 @@
+#Sales by Match
+
+#Function
+def sock_merchant(lst):
+    pairs = 0
+    for i in set(lst):
+        count = lst.count(i)
+        pairs += count // 2
+    print("Number of sock pairs available:", pairs)
+
+#Main
+lst = []
+n = int(input("Enter number of elements: "))
+for i in range(n):
+    ele = int(input())
+    lst.append(ele)
+
+sock_merchant(lst)
