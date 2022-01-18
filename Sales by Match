@@ -1,0 +1,21 @@
+#Sales by Match
+
+#Function
+def sock_merchant(lst):
+    lst_pair_count = 0
+    for i in lst:
+        lst_count = lst.count(i)
+        for j in range(lst_count):
+            lst.remove(i)
+        lst_count = lst_count // 2
+        lst_pair_count += lst_count
+    print("Number of pairs available:", lst_pair_count)
+
+#Main
+lst = []
+n = int(input("Enter number of elements: "))
+for i in range(n):
+    ele = int(input())
+    lst.append(ele)
+
+sock_merchant(lst)
