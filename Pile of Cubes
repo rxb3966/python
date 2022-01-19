@@ -1,0 +1,16 @@
+#Pile of Cubes
+
+#Function
+def pile_of_cubes(m):
+    n = 0
+    while (m > 0):
+        n += 1
+        m -= n**3
+    if m == 0:
+        print(n)
+    else:
+        print("None")
+
+#Main
+m = int(input("Enter number. "))
+pile_of_cubes(m)
