@@ -1,0 +1,15 @@
+#Persistence
+
+#Function
+def additive_persistence(n):
+    num = n
+    sum = 0
+    while num != n:
+        dig = num % 10
+        sum += dig
+        num = num // 10
+    print(sum)
+
+#Main
+n = int(input("Enter number. "))
+additive_persistence(n)
