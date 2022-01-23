@@ -1,0 +1,32 @@
+#Persistence
+
+#Functions
+def additive_persistence(n):
+    count = 0
+    while n > 10:
+        sum = 0
+        while n != 0:
+            rem = n % 10
+            sum += rem
+            n //= 10
+        n = sum
+        count += 1
+    print("additive persistence is", count)
+
+def multiplicative_persistence(n):
+    count = 0
+    while n > 10:
+        product = 1
+        while n != 0:
+            rem = n % 10
+            product *= rem
+            n //= 10
+        n = product
+        count += 1
+    print("multiplicative persistence is", count)
+
+#Main
+n = int(input("Enter number. "))
+
+additive_persistence(n)
+multiplicative_persistence(n)
