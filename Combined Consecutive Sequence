@@ -1,0 +1,21 @@
+#Combined Consecutive Sequence
+
+#Functions
+def consecutive_combo(lst1, lst2):
+    lst = lst1 + lst2
+    lst = list(map(int,lst))
+    lst.sort()
+    lst = list(set(lst))
+    print(lst)
+    if lst[-1] - lst[0] == len(lst) - 1:
+        print("True")
+    else:
+        print("False")
+
+#Main
+str1 = input("Enter first list. ")
+str2 = input("Enter second list. ")
+lst1 = str1.split(",")
+lst2 = str2.split(",")
+
+consecutive_combo(lst1, lst2)
