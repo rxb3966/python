@@ -1,0 +1,17 @@
+#Censor Words from List
+
+#Function
+def censor_string(txt, lst, char):
+    for i in lst:
+        print(i)
+        if i in txt:
+            txt = txt.replace(i, char * len(i))
+    print(txt)
+
+#Main
+txt = input("Text:")
+lst = input("Word/words you want censored:")
+lst = lst.split(" ")
+char = input("What to be censored with:")
+
+censor_string(txt, lst, char)
