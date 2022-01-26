@@ -1,0 +1,15 @@
+#Remove The Word!
+
+#Function
+def remove_letters(letters, word):
+    for i in word:
+        if i in letters:
+            letters.remove(i)
+    return letters
+
+#Main
+letters = input("letters:")
+letters = letters.split(" ")
+word = input("word:")
+
+print(remove_letters(letters, word))
