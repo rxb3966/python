@@ -1,0 +1,14 @@
+#Majority Vote
+
+#Function
+def majority_vote(lst):
+    for i in set(lst):
+        if lst.count(i) > len(lst) / 2:
+            return "Majority vote is", i + "."
+    return "None"
+
+#Main
+str = input("Votes:")
+lst = str.split(" ")
+
+print(majority_vote(lst))
