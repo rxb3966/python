@@ -1,0 +1,6 @@
+#It's a Meteor!
+def will_meteor_hit(equation, position):
+
+equation = input("meteor's trajectory equation:")
+position = tuple(input("character's position:"))
+will_meteor_hit(equation, position
