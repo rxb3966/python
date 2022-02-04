@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Birthday Party Invite</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <h2>You are Invited to</h2>
+        <h1>Shriyaa's Birthday Party!</h1>
+        
+        <h4 style="font-size:17px;">Details:</h4>
+        <p>Details:</p>
+        <ul>
+            <li></li>
+        </ul>
+        
+    </body>
+</html>
