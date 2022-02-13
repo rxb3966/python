@@ -1,0 +1,17 @@
+#Hashtag Generator
+
+#Function
+def generate_hashtag(txt):
+    hashtag = "#"
+    txt = txt.title()
+    for char in txt:
+        if char != " ":
+            hashtag += char
+    if len(hashtag) > 140 or len(hashtag) == 0 or len(txt):
+        return "false"
+    return hashtag
+
+#Main
+txt = input("Text:")
+
+print(generate_hashtag(txt))
